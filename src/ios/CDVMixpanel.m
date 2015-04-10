@@ -59,7 +59,6 @@
     NSString *alias = [command.arguments objectAtIndex:0];
     
     [mixpanel createAlias:alias forDistinctID:mixpanel.distinctId];
-    [mixpanel identify:mixpanel.distinctId];
     
     [self successWithCallbackId:command.callbackId];
 }
